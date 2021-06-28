@@ -7,13 +7,80 @@
            and uncomment the following Encore helpers to start using Symfony UX #}
         {% block stylesheets %}
             {#{{ encore_entry_link_tags('app') }}#}
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+            <link rel="stylesheet" href="{{ asset('css/stylesheet.css') }}">
         {% endblock %}
 
-        {% block javascripts %}
-            {#{{ encore_entry_script_tags('app') }}#}
-        {% endblock %}
     </head>
     <body>
+        <header>
+            {% block name %}
+                {% if app.session.get('admin') == false %}
+                    <h1><a id="title" href="/">Bookings</a></h1>
+                {% else %}
+                    <h1><a id="title" href="/admin">Bookings</a></h1>
+                {% endif %}
+            {% endblock %}
+
+            {% block nav %}
+                {% if app.session.get('admin') == false %}
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="/trips">Trips</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/bookings">My bookings</a>
+                                </li>
+                                {% if is_granted('ROLE_ADMIN') %}
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/admin">Admin zone</a>
+                                    </li>
+                                {% endif %}
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/logout">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                {% else %}
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="/admin/user">Users</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/admin/trip">Trips</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/admin/booking">Bookings</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/">Exit</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/logout">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                {% endif %}
+            {% endblock %}
+        </header>
         {% block body %}{% endblock %}
+
+        {% block javascripts %}
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        {% endblock %}
     </body>
 </html>

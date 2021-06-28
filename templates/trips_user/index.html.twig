@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Trip index{% endblock %}
+
+{% block body %}
+    {% if error is defined %}
+        <div class="alert alert-danger" role="alert">{{ error }}</div>
+    {% endif %}
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Destination</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Date</th>
+            <th>Available places</th>
+            <th>actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for trip in trips %}
+            <tr>
+                <td>{{ trip.id }}</td>
+                <td>{{ trip.name }}</td>
+                <td>{{ trip.destination }}</td>
+                <td>{{ trip.price }}</td>
+                <td>{{ trip.description }}</td>
+                <td>{{ trip.date ? trip.date|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ trip.availablePlaces }}</td>
+                <td>
+                    <form method="post" action="{{ path('trips_book', {'id': trip.id}) }}">
+                        <input type="number" min="1" name="places" max="{{ trip.availablePlaces }}">
+                        <input type="submit" value="Book">
+                    </form>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

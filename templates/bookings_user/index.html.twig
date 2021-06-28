@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Booking index{% endblock %}
+
+{% block body %}
+    {% if error is defined %}
+        <div class="alert alert-danger" role="alert">{{ error }}</div>
+    {% endif %}
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Places</th>
+            <th>TotalPrice</th>
+            <th>Trip</th>
+            <th>actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for booking in bookings %}
+
+                <tr>
+                    <td>{{ booking.id }}</td>
+                    <form method="post" action="{{ path('bookings_edit', {'id': booking.id}) }}">
+                    <td>
+                        <input type="number" min="1" name="places" max="{{ booking.trip.availablePlaces }}" value="{{ booking.places }}">
+                    </td>
+                    <td>{{ booking.totalPrice }}</td>
+                    <td>{{ booking.trip.name }}</td>
+                    <td>
+                        <input type="submit" value="Edit">
+                    </form>
+                        <form method="post" action="{{ path('bookings_delete', {'id': booking.id}) }}">
+                            <input type="submit" value="Cancel">
+                        </form>
+                    </td>
+                </tr>
+
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}
