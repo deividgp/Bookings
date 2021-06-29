@@ -2,9 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58c6c839-780a-4e7b-b0db-7fa315644a97" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/controllers.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/controllers/hello_controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/assets.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/prod/webpack_encore.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/test/webpack_encore.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/webpack_encore.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SymfonyProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SymfonyProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AdminHomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdminHomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BookingsUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BookingsUserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Booking.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Booking.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin_home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin_home/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/booking/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/booking/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/bookings_user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bookings_user/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/trips_user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/trips_user/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +174,8 @@
       <path value="$PROJECT_DIR$/vendor/friendsofphp/proxy-manager-lts" />
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
       <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/symfony/ux-chartjs" />
+      <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1uVTfINYDSbmziJ9l2dMxswG7lB" />
@@ -197,6 +223,8 @@
       <workItem from="1624831039756" duration="8081000" />
       <workItem from="1624863637070" duration="34455000" />
       <workItem from="1624911733984" duration="802000" />
+      <workItem from="1624925541251" duration="343000" />
+      <workItem from="1624968239608" duration="4711000" />
     </task>
     <servers />
   </component>

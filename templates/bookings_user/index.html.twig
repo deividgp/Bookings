@@ -13,6 +13,7 @@
             <th>Places</th>
             <th>TotalPrice</th>
             <th>Trip</th>
+            <th>Created</th>
             <th>actions</th>
         </tr>
         </thead>
@@ -27,6 +28,7 @@
                     </td>
                     <td>{{ booking.totalPrice }}</td>
                     <td>{{ booking.trip.name }}</td>
+                    <td>{{ booking.dateCreated.format("Y-m-d H:i:s") }}</td>
                     <td>
                         <input type="submit" value="Edit">
                     </form>

@@ -13,6 +13,7 @@
                 <th>TotalPrice</th>
                 <th>User</th>
                 <th>Trip</th>
+                <th>Created</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -24,6 +25,7 @@
                 <td>{{ booking.totalPrice }}</td>
                 <td>{{ booking.user.email }}</td>
                 <td>{{ booking.trip.name }}</td>
+                <td>{{ booking.dateCreated.format("Y-m-d H:i:s") }}</td>
                 <td>
                     <a href="{{ path('booking_show', {'id': booking.id}) }}">show</a>
                     <a href="{{ path('booking_edit', {'id': booking.id}) }}">edit</a>

@@ -47,7 +47,7 @@ class BookingsUserController extends AbstractController
         return $this->redirectToRoute('bookings_user');
     }
 
-    #[Route('/{id}', name: 'bookings_delete', methods: ['POST'])]
+    #[Route('/{id}/delete', name: 'bookings_delete', methods: ['POST'])]
     public function delete(Request $request, Booking $booking): Response
     {
         $entityManager = $this->getDoctrine()->getManager();

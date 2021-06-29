@@ -39,6 +39,20 @@ class Booking
      */
     private $trip;
 
+    /**
+     * @ORM\Column(type="datetime")
+     */
+    private $dateCreated;
+
+    /**
+     * Booking constructor.
+     * @param $dateCreated
+     */
+    public function __construct()
+    {
+        $this->dateCreated = new \DateTime();
+    }
+
     public function getId(): ?int
     {
         return $this->id;
@@ -98,5 +112,13 @@ class Booking
     public function setTrip($trip): void
     {
         $this->trip = $trip;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDateCreated()
+    {
+        return $this->dateCreated;
     }
 }
