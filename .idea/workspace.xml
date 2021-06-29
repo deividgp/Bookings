@@ -2,64 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58c6c839-780a-4e7b-b0db-7fa315644a97" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/SymfonyProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/stylesheet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/AdminHomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/BookingController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/BookingsUserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/NewUserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/TripController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/TripsUserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Booking.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Trip.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/BookingType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/TripType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/UserTypeUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/BookingRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/TripRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin_home/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/booking/_delete_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/booking/_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/booking/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/booking/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/booking/new.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/booking/show.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/bookings_user/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/new_user/_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/new_user/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/trip/_delete_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/trip/_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/trip/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/trip/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/trip/new.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/trip/show.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/trips_user/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/_delete_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/new.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bookings_user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bookings_user/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/trips_user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/trips_user/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,6 +172,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -250,7 +196,7 @@
       <workItem from="1624830991306" duration="32000" />
       <workItem from="1624831039756" duration="8081000" />
       <workItem from="1624863637070" duration="34455000" />
-      <workItem from="1624911733984" duration="22000" />
+      <workItem from="1624911733984" duration="802000" />
     </task>
     <servers />
   </component>

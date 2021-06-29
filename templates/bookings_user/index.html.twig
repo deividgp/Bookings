@@ -23,7 +23,7 @@
                     <td>{{ booking.id }}</td>
                     <form method="post" action="{{ path('bookings_edit', {'id': booking.id}) }}">
                     <td>
-                        <input type="number" min="1" name="places" max="{{ booking.trip.availablePlaces }}" value="{{ booking.places }}">
+                        <input type="number" min="1" name="places" value="{{ booking.places }}">
                     </td>
                     <td>{{ booking.totalPrice }}</td>
                     <td>{{ booking.trip.name }}</td>

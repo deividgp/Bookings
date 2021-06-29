@@ -31,7 +31,7 @@
                 <td>{{ trip.availablePlaces }}</td>
                 <td>
                     <form method="post" action="{{ path('trips_book', {'id': trip.id}) }}">
-                        <input type="number" min="1" name="places" max="{{ trip.availablePlaces }}">
+                        <input type="number" min="1" name="places">
                         <input type="submit" value="Book">
                     </form>
                 </td>
