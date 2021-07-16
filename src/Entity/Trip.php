@@ -48,6 +48,11 @@ class Trip
     private $availablePlaces;
 
     /**
+     * @ORM\Column(type="boolean", nullable=false)
+     */
+    private $featured;
+
+    /**
      * @ORM\OneToMany(targetEntity="Booking", mappedBy="trip")
      */
     private $tripBooking;
@@ -135,5 +140,21 @@ class Trip
     public function setAvailablePlaces($availablePlaces): void
     {
         $this->availablePlaces = $availablePlaces;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getFeatured()
+    {
+        return $this->featured;
+    }
+
+    /**
+     * @param mixed $featured
+     */
+    public function setFeatured($featured): void
+    {
+        $this->featured = $featured;
     }
 }

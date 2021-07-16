@@ -29,6 +29,7 @@ class TripType extends AbstractType
             ->add('availablePlaces', NumberType::class, [
                 'required' => true,
             ])
+            ->add('featured')
         ;
     }
 

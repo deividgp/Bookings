@@ -16,11 +16,16 @@ class HomeController extends AbstractController
 
         if($user){
             $this->get('session')->set('admin', false);
-            $trips = $tripRepository->findAll();
-            $random = rand(0, sizeof($trips)-1);
+            $allTrips = $tripRepository->findAll();
+            $trips = array();
 
+            foreach ($allTrips as $trip){
+                if ($trip->getFeatured() == true){
+                    array_push($trips, $trip);
+                }
+            }
             return $this->render('home/index.html.twig', [
-                'trip' => $trips[$random],
+                'trips' => $trips,
             ]);
         }else{
             return $this->redirectToRoute('app_login');

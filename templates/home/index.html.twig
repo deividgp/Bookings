@@ -3,10 +3,11 @@
 {% block title %}Home{% endblock %}
 
 {% block body %}
-    <h3>Featured trip</h3>
-    {% if trip is defined %}
+    <h3>Featured trips</h3>
+    {% if trips is defined %}
         <table class="table">
             <tbody>
+            {% for trip in trips %}
                 <tr>
                     <td><b>NAME</b></td>
                     <td>{{ trip.name }}</td>
@@ -31,6 +32,7 @@
                     <td><b>AVAILABLE PLACES</b></td>
                     <td>{{ trip.availablePlaces }}</td>
                 </tr>
+            {% endfor %}
             </tbody>
         </table>
     {% else %}
