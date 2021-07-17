@@ -6,34 +6,38 @@
     <h3>Featured trips</h3>
     {% if trips is defined %}
         <table class="table">
-            <tbody>
             {% for trip in trips %}
+            <tbody>
                 <tr>
-                    <td><b>NAME</b></td>
+                    <th>NAME</th>
                     <td>{{ trip.name }}</td>
                 </tr>
                 <tr>
-                    <td><b>DESTINATION</b></td>
+                    <th>DESTINATION</th>
                     <td>{{ trip.destination }}</td>
                 </tr>
                 <tr>
-                    <td><b>PRICE</b></td>
+                    <th>PRICE</th>
                     <td>{{ trip.price }}</td>
                 </tr>
                 <tr>
-                    <td><b>DESCRIPTION</b></td>
+                    <th>DESCRIPTION</th>
                     <td>{{ trip.description }}</td>
                 </tr>
                 <tr>
-                    <td><b>DATE</b></td>
+                    <th>DATE</th>
                     <td>{{ trip.date ? trip.date|date('Y-m-d H:i:s') : '' }}</td>
                 </tr>
                 <tr>
-                    <td><b>AVAILABLE PLACES</b></td>
+                    <th>AVAILABLE PLACES</th>
                     <td>{{ trip.availablePlaces }}</td>
                 </tr>
-            {% endfor %}
+                <tr>
+                    <th>IMAGE</th>
+                    <td>{{ trip.displayImage }}</td>
+                </tr>
             </tbody>
+            {% endfor %}
         </table>
     {% else %}
         <p>No available trips</p>

@@ -53,6 +53,13 @@ class Trip
     private $featured;
 
     /**
+     * @ORM\Column(type="blob", nullable=true)
+     */
+    private $image;
+
+    private $rawImage;
+
+    /**
      * @ORM\OneToMany(targetEntity="Booking", mappedBy="trip")
      */
     private $tripBooking;
@@ -156,5 +163,30 @@ class Trip
     public function setFeatured($featured): void
     {
         $this->featured = $featured;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
+     * @param mixed $image
+     */
+    public function setImage($image): void
+    {
+        $this->image = $image;
+    }
+
+    public function displayImage()
+    {
+        if(null === $this->rawImage && $this->getImage() != null) {
+            $this->rawImage = "data:image/png;base64," . base64_encode(stream_get_contents($this->getImage()));
+        }
+
+        return $this->rawImage;
     }
 }

@@ -16,6 +16,7 @@
                 <th>Date</th>
                 <th>Available places</th>
                 <th>Featured</th>
+                <th>Image</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -34,6 +35,7 @@
                 {% else %}
                     <td>No</td>
                 {% endif %}
+                <td><img style="height: 20%; width: 20%;" src="{{ trip.displayImage }}"></td>
                 <td>
                     <a href="{{ path('trip_show', {'id': trip.id}) }}">show</a>
                     <a href="{{ path('trip_edit', {'id': trip.id}) }}">edit</a>

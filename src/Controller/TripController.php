@@ -28,7 +28,9 @@ class TripController extends AbstractController
         $form = $this->createForm(TripType::class, $trip);
         $form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid()) {
+        if ($form->isSubmitted() && $form->isValid()){
+            $image = $form->get('image')->getData();
+            $trip->setImage(stream_get_contents(fopen($image->getRealPath(),'rb')));
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($trip);
             $entityManager->flush();

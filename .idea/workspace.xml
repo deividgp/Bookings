@@ -3,12 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="58c6c839-780a-4e7b-b0db-7fa315644a97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/TripController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TripController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Trip.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Trip.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/TripType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/TripType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/trip/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/trip/_form.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/trip/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/trip/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/trip/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/trip/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/trips_user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/trips_user/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +212,8 @@
       <workItem from="1625822443016" duration="1705000" />
       <workItem from="1626081716538" duration="9483000" />
       <workItem from="1626169477132" duration="1188000" />
-      <workItem from="1626343513052" duration="8649000" />
+      <workItem from="1626343513052" duration="10203000" />
+      <workItem from="1626510932649" duration="10044000" />
     </task>
     <servers />
   </component>
