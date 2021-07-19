@@ -38,6 +38,8 @@ class UserController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             //$user->setPassword($this->passwordHasher->hashPassword($user, $user->getPassword()));
+            $image = $form->get('image')->getData();
+            $user->setImage(stream_get_contents(fopen($image->getRealPath(),'rb')));
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($user);
             $entityManager->flush();
@@ -66,6 +68,8 @@ class UserController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            $image = $form->get('image')->getData();
+            $user->setImage(stream_get_contents(fopen($image->getRealPath(),'rb')));
             $this->getDoctrine()->getManager()->flush();
 
             return $this->redirectToRoute('user_index');

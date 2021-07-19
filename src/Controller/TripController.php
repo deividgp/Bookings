@@ -59,6 +59,8 @@ class TripController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            $image = $form->get('image')->getData();
+            $trip->setImage(stream_get_contents(fopen($image->getRealPath(),'rb')));
             $this->getDoctrine()->getManager()->flush();
 
             return $this->redirectToRoute('trip_index');

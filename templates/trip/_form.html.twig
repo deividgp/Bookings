@@ -1,6 +1,6 @@
 {{ form_start(form) }}
     {{ form_widget(form) }}
-    <img style="height: 20%; width: 20%;" src="{{ trip.displayImage }}">
+    <img src="{{ trip.displayImage }}">
     <br>
     <button class="btn">{{ button_label|default('Save') }}</button>
 {{ form_end(form) }}

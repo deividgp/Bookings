@@ -2,15 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58c6c839-780a-4e7b-b0db-7fa315644a97" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Controller/EditUserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/edit_user/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/edit_user/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/NewUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/NewUserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/TripController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TripController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Trip.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Trip.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/TripType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/TripType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/UserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/UserTypeUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/UserTypeUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/new_user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/new_user/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/trip/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/trip/_form.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/trip/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/trip/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/trip/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/trip/show.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/trips_user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/trips_user/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +224,11 @@
       <workItem from="1626081716538" duration="9483000" />
       <workItem from="1626169477132" duration="1188000" />
       <workItem from="1626343513052" duration="10203000" />
-      <workItem from="1626510932649" duration="10044000" />
+      <workItem from="1626510932649" duration="10804000" />
+      <workItem from="1626564073803" duration="3242000" />
+      <workItem from="1626597243872" duration="3244000" />
+      <workItem from="1626683792069" duration="7671000" />
+      <workItem from="1626720825452" duration="138000" />
     </task>
     <servers />
   </component>

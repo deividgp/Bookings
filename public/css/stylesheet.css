@@ -1,4 +1,35 @@
-#title, #title:hover, #title:focus, #title:active {
+#title {
+    text-align: center;
+}
+
+#titlelink, #titlelink:hover, #titlelink:focus, #titlelink:active {
     text-decoration: none;
     color: inherit;
+}
+
+img {
+    height: 20%;
+    width: 20%;
+}
+
+#content {
+    padding: 1%;
+}
+
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
+
+    .navbar .nav-item:hover .nav-link {
+        color: #000000;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        margin-top: 0;
+    }
 }

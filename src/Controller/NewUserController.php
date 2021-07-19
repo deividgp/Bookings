@@ -19,7 +19,7 @@ class NewUserController extends AbstractController
         $this->passwordHasher = $passwordHasher;
     }
 
-    #[Route('/newuser', name: 'new_user')]
+    #[Route('/newuser', name: 'new_user', methods: ['GET', 'POST'])]
     public function index(Request $request): Response
     {
         $user = $this->getUser();
@@ -30,9 +30,9 @@ class NewUserController extends AbstractController
 
             if ($form->isSubmitted() && $form->isValid()) {
                 $user->setRoles(["ROLE_USER"]);
-
                 //$user->setPassword($this->passwordHasher->hashPassword($user, $user->getPassword()));
-
+                $image = $form->get('image')->getData();
+                $user->setImage(stream_get_contents(fopen($image->getRealPath(),'rb')));
                 $entityManager = $this->getDoctrine()->getManager();
                 $entityManager->persist($user);
                 $entityManager->flush();

@@ -30,7 +30,7 @@
                 <td>{{ trip.description }}</td>
                 <td>{{ trip.date ? trip.date|date('Y-m-d H:i:s') : '' }}</td>
                 <td>{{ trip.availablePlaces }}</td>
-                <td><img style="height: 20%; width: 20%;" src="{{ trip.displayImage }}"></td>
+                <td><img src="{{ trip.displayImage }}"></td>
                 <td>
                     <form method="post" action="{{ path('trips_book', {'id': trip.id}) }}">
                         <input type="number" min="1" name="places">
